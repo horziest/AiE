@@ -11,9 +11,9 @@
 }
 
 .farmIcon.active {
-    background: url('https://gme.cyllos.dev/res/bdready.png');
+    background-image: url('https://gme.cyllos.dev/res/bdready.png');
 }
 
 .farmIcon.inactive {
-    background: url('https://gme.cyllos.dev/res/bdfarmed.png');
+    background-image: url('https://gme.cyllos.dev/res/bdfarmed.png');
 }
