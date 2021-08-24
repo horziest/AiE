@@ -1,0 +1,19 @@
+.farmCounter {
+    position: absolute;
+    color: #fff;
+    text-shadow: #000 1px 1px;
+    font-weight: 700;
+    font-family: Arial;
+    font-size: 12px;
+    left: 1px;
+    top: -1px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.farmIcon .active {
+    background: url('https://gme.cyllos.dev/res/bdready.png');
+}
+
+.farmIcon .inactive {
+    background: url('https://gme.cyllos.dev/res/bdfarmed.png');
+}
