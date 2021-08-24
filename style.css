@@ -10,10 +10,10 @@
     background-color: rgba(0,0,0,0.5);
 }
 
-.farmIcon .active {
+.farmIcon.active {
     background: url('https://gme.cyllos.dev/res/bdready.png');
 }
 
-.farmIcon .inactive {
+.farmIcon.inactive {
     background: url('https://gme.cyllos.dev/res/bdfarmed.png');
 }
