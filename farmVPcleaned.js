@@ -1,16 +1,3 @@
-// ==UserScript==
-// @name            NE_VP_TEST
-// @description     Nehess et se retrouver avec toutes ses villes dans le rouge ....
-// @author          Neriss
-// @grant           GM_setValue
-// @grant           GM_getValue
-// @grant           unsafeWindow
-// @include         http://*.grepolis.com/game/*
-// @include         https://*.grepolis.com/game/*
-// @icon            https://cdn.discordapp.com/attachments/852734145582071839/852734152939012126/unknown.png
-// @version         1.2.0
-// ==/UserScript==
-
 var UWGame = unsafeWindow.Game;
 unsafeWindow.UWGame = UWGame;
 
