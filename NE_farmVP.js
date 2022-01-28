@@ -88,7 +88,7 @@ function updateFarmingButton(){
     if($(".captain_active").length > 0){
         // update the timer
         var dateNext = new Date(0);
-        dateNext.setUTCSeconds(GM_getValue( UWGame.world_id + '_grepolis-claim-ready') / 1000);
+        dateNext.setUTCSeconds(GM_getValue( UWGame.world_id + '_gamefarming-claim-ready') / 1000);
         var dateNow = new Date(0);
         dateNow.setUTCSeconds($.now() / 1000);
         if(dateNext < dateNow) $(".farmCounter")[0].innerText = "0";
@@ -139,7 +139,6 @@ function loopVP(){
             waitVP(delayNextVP);
         } else {
             delayNextVP = value - Date.now() + tempsAlea*1000;
-            //GM_setValue( UWGame.world_id + '_grepolis-claim-ready', (( parseInt( $.now() ) ) + ( parseInt( time ) * 1000)) );
             console.log("delayNextVP = " + delayNextVP);
             waitVP(delayNextVP);
         }
@@ -149,7 +148,7 @@ function loopVP(){
 function waitVP(delayNextVP){
     var farmTimestamp = Date.now() + delayNextVP;
     var interval = 1000;
-    GM_setValue( UWGame.world_id + '_grepolis-claim-ready', farmTimestamp );
+    GM_setValue( UWGame.world_id + '_game-claim-ready', farmTimestamp );
 
     var sleep = new Promise((resolve, reject) => {
         var timerVP = setInterval(function(){
